@@ -10,9 +10,16 @@ export class LaptopComponent implements OnInit {
   brand = ["","acer","Dell","hp"];
   price = ["","less than 50000","less than 70000","less than 100000"];
 
-  constructor() { }
+  constructor() {}
 
   ngOnInit() {
   }
+
+
+state = true;
+
+stateChanger(){
+	this.state = !this.state;
+}
 
 }

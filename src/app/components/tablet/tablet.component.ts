@@ -10,9 +10,16 @@ export class TabletComponent implements OnInit {
   brand = ["","Samsung","Nokia","Oppo"];
   price = ["","less than 10000","less than 20000","less than 30000"];
 
-  constructor() { }
+  constructor() {}
 
   ngOnInit() {
   }
+
+
+state = true;
+
+stateChanger(){
+	this.state = !this.state;
+}
 
 }

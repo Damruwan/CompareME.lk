@@ -9,12 +9,19 @@ import { PhoneComponent } from './components/phone/phone.component';
 import { LaptopComponent } from './components/laptop/laptop.component';
 import { TabletComponent } from './components/tablet/tablet.component';
 import { SmartwatchComponent } from './components/smartwatch/smartwatch.component';
+import { SetmycolorDirective } from './directives/setmycolor.directive';
+import { SetmycolorhilightDirective } from './directives/setmycolorhilight.directive';
+import { AddpostComponent } from './components/addpost/addpost.component';
+
 
 const appRoutes: Routes = [
     {path:'phone', component: PhoneComponent },
     {path:'laptop', component: LaptopComponent },
     {path:'tablet', component: TabletComponent },
-    {path:'smartwatch', component: SmartwatchComponent }
+    {path:'smartwatch', component: SmartwatchComponent },
+    {path:'addpost', component: AddpostComponent }
+
+    
 ]
 
 @NgModule({
@@ -25,7 +32,11 @@ const appRoutes: Routes = [
     PhoneComponent,
     LaptopComponent,
     TabletComponent,
-    SmartwatchComponent
+    SmartwatchComponent,
+    SetmycolorDirective,
+    SetmycolorhilightDirective,
+    AddpostComponent
+ 
   ],
   imports: [
      RouterModule.forRoot(appRoutes),

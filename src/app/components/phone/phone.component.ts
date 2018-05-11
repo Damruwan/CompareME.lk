@@ -17,5 +17,10 @@ export class PhoneComponent implements OnInit {
   }
 
 
+state = true;
+
+stateChanger(){
+	this.state = !this.state;
 }
 
+}
